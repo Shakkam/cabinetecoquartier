@@ -538,6 +538,41 @@ address { font-style: normal; }
 .meta-value { font-size: .9375rem; color: var(--txt-dark); font-weight: 500; }
 .meta-value--accent { color: var(--green-dark); font-weight: 700; }
 
+/* Portrait praticien dans discipline-detail */
+.discipline-body { display: flex; gap: 2.5rem; align-items: flex-start; flex-wrap: wrap; }
+.discipline-text { flex: 1; min-width: 0; }
+
+.practitioner-portrait { flex-shrink: 0; width: 150px; }
+@media (max-width: 600px) { .practitioner-portrait { width: 120px; } }
+
+.portrait-wrap { position: relative; }
+/* Rectangle décalé derrière le portrait */
+.portrait-offset {
+  position: absolute; inset: 0;
+  transform: translate(-8px, -8px);
+  background: var(--sage-bg); border: 1.5px solid var(--sage-light);
+  border-radius: var(--radius); z-index: 0;
+}
+.portrait-img {
+  position: relative; z-index: 1;
+  width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top;
+  border-radius: var(--radius); display: block;
+}
+/* Placeholder initiales */
+.portrait-placeholder {
+  position: relative; z-index: 1;
+  width: 100%; aspect-ratio: 3/4;
+  background: linear-gradient(160deg, var(--plum-dark), var(--plum-deeper));
+  border-radius: var(--radius); display: flex; align-items: center; justify-content: center;
+  font-family: 'Nunito',sans-serif; font-size: 2rem; font-weight: 800;
+  color: rgba(255,255,255,.35); letter-spacing: .04em; user-select: none;
+}
+.portrait-caption {
+  margin-top: .625rem; font-size: 11px; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--txt-light); text-align: center;
+  position: relative; z-index: 1;
+}
+
 /* ================================================
    STAGES
    ================================================ */
