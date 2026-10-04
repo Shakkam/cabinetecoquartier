@@ -510,6 +510,11 @@ address { font-style: normal; }
 .disciplines-subnav::-webkit-scrollbar { display: none; }
 .subnav-inner { display: flex; gap: 0; width: max-content; padding: 0 clamp(1rem,3vw,2.5rem); }
 .subnav-link { display: block; padding: .75rem 1rem; font-family: 'Nunito',sans-serif; font-size: 13px; font-weight: 700; color: var(--plum); white-space: nowrap; border-bottom: 2px solid transparent; margin-bottom: -2px; transition: color var(--t), border-color var(--t); }
+@media (max-width: 720px) {
+  .disciplines-subnav { position: static; overflow-x: visible; }
+  .subnav-inner { width: auto; flex-wrap: wrap; justify-content: center; padding: .25rem .5rem; }
+  .subnav-link { padding: .55rem .75rem; margin-bottom: 0; }
+}
 .subnav-link:hover { color: var(--green-dark); border-bottom-color: var(--green); }
 
 /* Sections discipline détaillées */
