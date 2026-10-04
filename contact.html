@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; accès — Cabinet de l'Écoquartier</title>
+  <meta name="description" content="2 mail Françoise Dolto, 1er étage, 31520 Ramonville St Agne. Au pied du terminus Métro Ligne B. cabinetecoquartier@gmail.com">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="Cabinet de l'Écoquartier — accueil">
+        <img src="images/logo.webp" alt="Cabinet de l'Écoquartier" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="logo-fallback" style="display:none">Cabinet de l'Écoquartier</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link" data-nav="index">Accueil</a></li>
+          <li class="nav-item-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" data-nav="disciplines">
+              Disciplines
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown" role="menu" aria-label="Disciplines">
+              <div class="nav-dropdown-header">Nos disciplines</div>
+              <a href="disciplines.html"                  class="nav-dropdown-link nav-dropdown-link--first" role="menuitem">Toutes les disciplines</a>
+              <a href="disciplines.html#osteopathie"      class="nav-dropdown-link" role="menuitem">Ostéopathie</a>
+              <a href="disciplines.html#energetique"      class="nav-dropdown-link" role="menuitem">Énergétique chinoise</a>
+              <a href="disciplines.html#mbsr"             class="nav-dropdown-link" role="menuitem">MBSR — Pleine conscience</a>
+              <a href="disciplines.html#sophrologie"      class="nav-dropdown-link" role="menuitem">Sophrologie</a>
+              <a href="disciplines.html#yoga"             class="nav-dropdown-link" role="menuitem">Yoga</a>
+              <a href="disciplines.html#somatotherapie"   class="nav-dropdown-link" role="menuitem">Somatothérapie</a>
+              <a href="disciplines.html#kinesiologie"     class="nav-dropdown-link" role="menuitem">Kinésiologie</a>
+            </div>
+          </li>
+          <li><a href="stages.html"  class="nav-link" data-nav="stages">Stages</a></li>
+          <li><a href="tarifs.html"  class="nav-link" data-nav="tarifs">Tarifs</a></li>
+          <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta"><a href="contact.html" class="btn-nav-cta">Prendre contact</a></div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="overlay-menu">
+        <span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- OVERLAY MOBILE -->
+  <div class="overlay-menu" id="overlay-menu" role="dialog" aria-modal="true" aria-label="Menu principal">
+    <nav class="overlay-nav" aria-label="Menu mobile">
+      <ul class="overlay-list" role="list">
+        <li class="overlay-item"><a href="index.html" class="overlay-link" data-nav="index">Accueil</a></li>
+        <li class="overlay-item">
+          <button class="overlay-link overlay-submenu-btn" aria-expanded="false" aria-controls="overlay-sub-disciplines">
+            Disciplines
+            <svg class="overlay-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="overlay-sub" id="overlay-sub-disciplines" hidden>
+            <li><a href="disciplines.html"                class="overlay-sub-link">Toutes les disciplines</a></li>
+            <li><a href="disciplines.html#osteopathie"    class="overlay-sub-link">Ostéopathie</a></li>
+            <li><a href="disciplines.html#energetique"    class="overlay-sub-link">Énergétique chinoise</a></li>
+            <li><a href="disciplines.html#mbsr"           class="overlay-sub-link">MBSR — Pleine conscience</a></li>
+            <li><a href="disciplines.html#sophrologie"    class="overlay-sub-link">Sophrologie</a></li>
+            <li><a href="disciplines.html#yoga"           class="overlay-sub-link">Yoga</a></li>
+            <li><a href="disciplines.html#somatotherapie" class="overlay-sub-link">Somatothérapie</a></li>
+            <li><a href="disciplines.html#kinesiologie"   class="overlay-sub-link">Kinésiologie</a></li>
+          </ul>
+        </li>
+        <li class="overlay-item"><a href="stages.html"  class="overlay-link" data-nav="stages">Stages</a></li>
+        <li class="overlay-item"><a href="tarifs.html"  class="overlay-link" data-nav="tarifs">Tarifs</a></li>
+        <li class="overlay-item"><a href="contact.html" class="overlay-link" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <footer class="overlay-footer">
+      <a href="mailto:cabinetecoquartier@gmail.com" class="overlay-email">cabinetecoquartier@gmail.com</a>
+      <span class="overlay-address">2 mail Françoise Dolto (1er étage) · Ramonville St Agne · Métro Ligne B</span>
+    </footer>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Contact et accès">
+    <div class="container page-hero-inner">
+      <span class="page-hero-label">Cabinet de l'Écoquartier</span>
+      <h1 class="page-hero-title">Nous <strong>trouver</strong><br><em>et nous contacter</em></h1>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" aria-labelledby="contact-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Accès &amp; contact</span>
+        <h2 class="section-title" id="contact-heading">
+          Venez nous<br><strong>rendre visite</strong>
+        </h2>
+      </header>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <div class="reveal">
+            <span class="contact-block-title">Adresse</span>
+            <address class="contact-address">
+              Cabinet de l'Écoquartier<br>
+              2 mail Françoise Dolto, <strong>1er étage</strong><br>
+              31520 Ramonville Saint-Agne
+            </address>
+            <p class="contact-detail">Bâtiment blanc face au parking du métro — entrée par la cour, 1er étage au-dessus des commerces.</p>
+          </div>
+
+          <div class="reveal">
+            <span class="contact-block-title">Transports en commun</span>
+            <p class="contact-address">
+              Métro <strong>Ligne B</strong> — Station <strong>Ramonville</strong> (terminus)<br>
+              Au pied de la station. Sortie direction parking métro.
+            </p>
+            <p class="contact-detail">Le cabinet est accessible directement depuis le terminus, à quelques pas à pied.</p>
+          </div>
+
+          <div class="reveal">
+            <span class="contact-block-title">Stationnement</span>
+            <p class="contact-detail">
+              Places en zone bleue au pied de l'immeuble (1h30 gratuites avec disque de stationnement).<br>
+              Parking du métro payant (valider son ticket de métro pour sortir).
+            </p>
+          </div>
+
+          <div class="reveal">
+            <span class="contact-block-title">Contact</span>
+            <a href="mailto:cabinetecoquartier@gmail.com" class="contact-link">cabinetecoquartier@gmail.com</a>
+            <p class="contact-detail">Pour prendre rendez-vous ou vous renseigner sur une discipline, contactez directement le praticien souhaité ou utilisez l'adresse générale ci-dessus.</p>
+          </div>
+
+          <div class="reveal">
+            <span class="contact-block-title">Horaires par discipline</span>
+            <dl class="hours-list">
+              <div class="hours-row">
+                <dt>Ostéopathie</dt>
+                <dd>Lun–Ven 9h–19h30 · Mer 9h–14h30</dd>
+              </div>
+              <div class="hours-row">
+                <dt>Énergétique chinoise</dt>
+                <dd>Lun, Mer, Ven 12h30–19h</dd>
+              </div>
+              <div class="hours-row">
+                <dt>Yoga</dt>
+                <dd>Lun 19h30 · Mer 12h15 &amp; 19h · Jeu 19h30</dd>
+              </div>
+              <div class="hours-row">
+                <dt>Autres disciplines</dt>
+                <dd>Sur rendez-vous</dd>
+              </div>
+            </dl>
+          </div>
+
+        </div>
+
+        <div class="contact-map reveal">
+          <div class="map-embed">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=1.4670%2C43.5505%2C1.4710%2C43.5530&layer=mapnik&marker=43.5518%2C1.4690"
+              title="Cabinet de l'Écoquartier — 2 mail Françoise Dolto, Ramonville St Agne"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <a
+            href="https://www.openstreetmap.org/?mlat=43.5518&mlon=1.4690#map=18/43.5518/1.4690"
+            class="map-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1a4.5 4.5 0 0 1 4.5 4.5C11.5 9.25 7 13 7 13S2.5 9.25 2.5 5.5A4.5 4.5 0 0 1 7 1Z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="7" cy="5.5" r="1.25" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            Agrandir sur OpenStreetMap
+          </a>
+
+          <div style="margin-top:1.5rem;padding:1.25rem 1.5rem;background:var(--sage-bg);border-left:3px solid var(--green);border-radius:var(--radius)" class="reveal">
+            <span class="contact-block-title" style="margin-bottom:.5rem">Prendre rendez-vous</span>
+            <p style="font-size:.875rem;color:var(--txt-mid);line-height:1.65;margin-bottom:.75rem">
+              Les rendez-vous se prennent directement auprès de chaque praticien. Pour l'ostéopathie avec Pascal Ngo Van Duc, vous pouvez également réserver en ligne via Doctolib.
+            </p>
+            <a href="mailto:cabinetecoquartier@gmail.com" class="btn-outline" style="font-size:13px">
+              Écrire au cabinet
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div><img src="images/logo.webp" alt="" class="footer-logo" aria-hidden="true" loading="lazy"></div>
+          <div>
+            <p class="footer-site-name">Cabinet de l'Écoquartier</p>
+            <p class="footer-tagline">Centre paramédical pluridisciplinaire<br>Ramonville St Agne</p>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="disciplines.html">Disciplines</a></li>
+            <li><a href="stages.html">Stages &amp; ateliers</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+          </ul>
+        </nav>
+        <address class="footer-contact">
+          <p>2 mail Françoise Dolto, 1er étage<br>31520 Ramonville St Agne</p>
+          <p>Métro Ligne B · Ramonville (terminus)</p>
+          <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+        </address>
+      </div>
+      <p class="footer-legal">© Cabinet de l'Écoquartier · Démo statique — contenu réel cabinetecoquartier.fr</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

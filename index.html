@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabinet de l'Écoquartier — Centre paramédical Ramonville St Agne</title>
+  <meta name="description" content="Centre paramédical pluridisciplinaire à Ramonville St Agne. 8 disciplines, 10 praticiens : ostéopathie, énergétique chinoise, MBSR, sophrologie, yoga, somatothérapie, kinésiologie.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="Cabinet de l'Écoquartier — accueil">
+        <img
+          src="images/logo.webp"
+          alt="Cabinet de l'Écoquartier"
+          class="logo-img"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+        >
+        <span class="logo-fallback" style="display:none">Cabinet de l'Écoquartier</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li>
+            <a href="index.html" class="nav-link" data-nav="index">Accueil</a>
+          </li>
+          <li class="nav-item-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" data-nav="disciplines">
+              Disciplines
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown" role="menu" aria-label="Disciplines">
+              <div class="nav-dropdown-header">Nos disciplines</div>
+              <a href="disciplines.html"                  class="nav-dropdown-link nav-dropdown-link--first" role="menuitem">Toutes les disciplines</a>
+              <a href="disciplines.html#osteopathie"      class="nav-dropdown-link" role="menuitem">Ostéopathie</a>
+              <a href="disciplines.html#energetique"      class="nav-dropdown-link" role="menuitem">Énergétique chinoise</a>
+              <a href="disciplines.html#mbsr"             class="nav-dropdown-link" role="menuitem">MBSR — Pleine conscience</a>
+              <a href="disciplines.html#sophrologie"      class="nav-dropdown-link" role="menuitem">Sophrologie</a>
+              <a href="disciplines.html#yoga"             class="nav-dropdown-link" role="menuitem">Yoga</a>
+              <a href="disciplines.html#somatotherapie"   class="nav-dropdown-link" role="menuitem">Somatothérapie</a>
+              <a href="disciplines.html#kinesiologie"     class="nav-dropdown-link" role="menuitem">Kinésiologie</a>
+            </div>
+          </li>
+          <li><a href="stages.html"  class="nav-link" data-nav="stages">Stages</a></li>
+          <li><a href="tarifs.html"  class="nav-link" data-nav="tarifs">Tarifs</a></li>
+          <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn-nav-cta">Prendre contact</a>
+      </div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="overlay-menu">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- OVERLAY MOBILE -->
+  <div class="overlay-menu" id="overlay-menu" role="dialog" aria-modal="true" aria-label="Menu principal">
+    <nav class="overlay-nav" aria-label="Menu mobile">
+      <ul class="overlay-list" role="list">
+        <li class="overlay-item"><a href="index.html" class="overlay-link" data-nav="index">Accueil</a></li>
+        <li class="overlay-item">
+          <button class="overlay-link overlay-submenu-btn" aria-expanded="false" aria-controls="overlay-sub-disciplines">
+            Disciplines
+            <svg class="overlay-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="overlay-sub" id="overlay-sub-disciplines" hidden>
+            <li><a href="disciplines.html"                class="overlay-sub-link">Toutes les disciplines</a></li>
+            <li><a href="disciplines.html#osteopathie"    class="overlay-sub-link">Ostéopathie</a></li>
+            <li><a href="disciplines.html#energetique"    class="overlay-sub-link">Énergétique chinoise</a></li>
+            <li><a href="disciplines.html#mbsr"           class="overlay-sub-link">MBSR — Pleine conscience</a></li>
+            <li><a href="disciplines.html#sophrologie"    class="overlay-sub-link">Sophrologie</a></li>
+            <li><a href="disciplines.html#yoga"           class="overlay-sub-link">Yoga</a></li>
+            <li><a href="disciplines.html#somatotherapie" class="overlay-sub-link">Somatothérapie</a></li>
+            <li><a href="disciplines.html#kinesiologie"   class="overlay-sub-link">Kinésiologie</a></li>
+          </ul>
+        </li>
+        <li class="overlay-item"><a href="stages.html"  class="overlay-link" data-nav="stages">Stages</a></li>
+        <li class="overlay-item"><a href="tarifs.html"  class="overlay-link" data-nav="tarifs">Tarifs</a></li>
+        <li class="overlay-item"><a href="contact.html" class="overlay-link" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <footer class="overlay-footer">
+      <a href="mailto:cabinetecoquartier@gmail.com" class="overlay-email">cabinetecoquartier@gmail.com</a>
+      <span class="overlay-address">2 mail Françoise Dolto (1er étage) · Ramonville St Agne · Métro Ligne B</span>
+    </footer>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Présentation du cabinet">
+    <div class="hero-photo" role="img" aria-label="Chemin de prairie — Cabinet de l'Écoquartier"></div>
+    <div class="hero-content">
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <span class="hero-eyebrow">Cabinet de l'Écoquartier · Ramonville St Agne</span>
+          <h1 class="hero-title">
+            Plusieurs disciplines<br>
+            pour un soin<br>
+            <em>adapté à chacun·e</em>
+          </h1>
+          <p class="hero-sub">
+            Centre paramédical pluridisciplinaire au cœur de l'Écoquartier de Ramonville.
+            8 disciplines, 10 praticiens, un accompagnement physique et psychologique global.
+          </p>
+          <div class="hero-actions">
+            <a href="disciplines.html" class="btn-hero">
+              Découvrir les disciplines
+              <span class="btn-hero-circle" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <a href="contact.html" class="hero-link-secondary">Prendre rendez-vous →</a>
+          </div>
+        </div>
+
+        <!-- Info-card bas-droite — infos réelles du cabinet -->
+        <aside class="hero-infocard" aria-label="Informations pratiques">
+          <span class="infocard-label">Accès &amp; informations</span>
+          <p class="infocard-line">
+            <svg class="infocard-icon" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1a4 4 0 0 1 4 4c0 3.25-4 8-4 8S3 8.25 3 5a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="7" cy="5" r="1.2" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+            <span><strong>2 mail Françoise Dolto</strong>, 1er étage<br>31520 Ramonville St Agne</span>
+          </p>
+          <p class="infocard-line">
+            <svg class="infocard-icon" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <rect x="1" y="4" width="12" height="7" rx="1" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M4 4V3a3 3 0 0 1 6 0v1" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="7" cy="7.5" r="1" fill="currentColor"/>
+            </svg>
+            <span>Métro <strong>Ligne B</strong> · Ramonville (terminus)</span>
+          </p>
+          <p class="infocard-line">
+            <svg class="infocard-icon" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M7 4v3l2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <span><strong>8 disciplines</strong> · 10 praticiens</span>
+          </p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BANDEAU RÉASSURANCE -->
+  <div class="reassurance" aria-label="Points forts">
+    <div class="reassurance-inner">
+      <span class="reassurance-item">8 disciplines complémentaires <span class="reassurance-dot" aria-hidden="true"></span></span>
+      <span class="reassurance-item">10 praticiens qualifiés <span class="reassurance-dot" aria-hidden="true"></span></span>
+      <span class="reassurance-item">Adultes · Enfants · Seniors <span class="reassurance-dot" aria-hidden="true"></span></span>
+      <span class="reassurance-item">Métro Ligne B — Ramonville</span>
+    </div>
+  </div>
+
+  <!-- TILES DISCIPLINES -->
+  <section class="discipline-tiles" aria-labelledby="tiles-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Nos disciplines</span>
+        <h2 class="section-title" id="tiles-heading">
+          Huit approches pour<br><strong>votre bien-être</strong>
+        </h2>
+      </header>
+
+      <div class="tiles-grid">
+        <a href="disciplines.html#osteopathie" class="tile tile--osteo reveal">
+          <div class="tile-bg"></div>
+          <div class="tile-content">
+            <span class="tile-num">/01</span>
+            <span class="tile-name">Ostéopathie</span>
+            <span class="tile-sub">Benoît Cazeaux · Pascal Ngo Van Duc</span>
+          </div>
+        </a>
+        <a href="disciplines.html#mbsr" class="tile tile--mbsr reveal">
+          <div class="tile-bg"></div>
+          <div class="tile-content">
+            <span class="tile-num">/03</span>
+            <span class="tile-name">MBSR — Pleine conscience</span>
+            <span class="tile-sub">Marie-Dominique Chamard</span>
+          </div>
+        </a>
+        <a href="disciplines.html#yoga" class="tile tile--yoga reveal">
+          <div class="tile-bg"></div>
+          <div class="tile-content">
+            <span class="tile-num">/05</span>
+            <span class="tile-name">Yoga</span>
+            <span class="tile-sub">Virginie Callette</span>
+          </div>
+        </a>
+        <a href="disciplines.html#energetique" class="tile tile--energie reveal">
+          <div class="tile-bg"></div>
+          <div class="tile-content">
+            <span class="tile-num">/02</span>
+            <span class="tile-name">Énergétique chinoise</span>
+            <span class="tile-sub">Nathalie Beth</span>
+          </div>
+        </a>
+      </div>
+
+      <p class="tile-link reveal">
+        <a href="disciplines.html" class="btn-outline">
+          Voir toutes les disciplines
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- SPLIT SECTION — Le Cabinet -->
+  <section class="split-section" aria-labelledby="cabinet-heading">
+    <div class="container">
+      <div class="split-grid">
+
+        <div class="split-visual reveal">
+          <div class="split-visual-rect" aria-hidden="true"></div>
+          <div class="split-visual-card" aria-label="Slogan du cabinet">
+            <blockquote class="split-visual-quote">
+              « Plusieurs disciplines pour un soin adapté à chacun·e — prise en charge globale, physique et psychologique. »
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="split-text reveal">
+          <span class="section-label">Le cabinet</span>
+          <h2 class="section-title" id="cabinet-heading">
+            Un espace de soins<br><em>pluridisciplinaire</em>
+          </h2>
+          <p class="split-desc">
+            Installé au cœur de l'Écoquartier de Ramonville St Agne, au pied du terminus de la Ligne B, le Cabinet de l'Écoquartier réunit 10 praticiens autour d'une conviction commune : une prise en charge globale — physique et psychologique — adaptée à chaque personne.
+          </p>
+          <p class="split-desc">
+            Qu'il s'agisse de soulager une douleur, de traverser une période de stress ou de découvrir de nouvelles voies de mieux-être, nos huit disciplines complémentaires offrent une réponse singulière à chaque besoin.
+          </p>
+          <div class="split-stats" aria-label="Chiffres clés">
+            <div>
+              <span class="stat-number">8</span>
+              <span class="stat-label">disciplines</span>
+            </div>
+            <div>
+              <span class="stat-number">10</span>
+              <span class="stat-label">praticiens</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div>
+            <img src="images/logo.webp" alt="" class="footer-logo" aria-hidden="true" loading="lazy">
+          </div>
+          <div>
+            <p class="footer-site-name">Cabinet de l'Écoquartier</p>
+            <p class="footer-tagline">Centre paramédical pluridisciplinaire<br>Ramonville St Agne</p>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="disciplines.html">Disciplines</a></li>
+            <li><a href="stages.html">Stages &amp; ateliers</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+          </ul>
+        </nav>
+        <address class="footer-contact">
+          <p>2 mail Françoise Dolto, 1er étage<br>31520 Ramonville St Agne</p>
+          <p>Métro Ligne B · Ramonville (terminus)</p>
+          <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+        </address>
+      </div>
+      <p class="footer-legal">© Cabinet de l'Écoquartier · Démo statique — contenu réel cabinetecoquartier.fr</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

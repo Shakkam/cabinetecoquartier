@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disciplines — Cabinet de l'Écoquartier</title>
+  <meta name="description" content="Ostéopathie, énergétique chinoise, MBSR, sophrologie, yoga, somatothérapie, kinésiologie. Les 8 disciplines du Cabinet de l'Écoquartier à Ramonville St Agne.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="disciplines">
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="Cabinet de l'Écoquartier — accueil">
+        <img src="images/logo.webp" alt="Cabinet de l'Écoquartier" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="logo-fallback" style="display:none">Cabinet de l'Écoquartier</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link" data-nav="index">Accueil</a></li>
+          <li class="nav-item-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" data-nav="disciplines">
+              Disciplines
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown" role="menu" aria-label="Disciplines">
+              <div class="nav-dropdown-header">Nos disciplines</div>
+              <a href="disciplines.html"                  class="nav-dropdown-link nav-dropdown-link--first" role="menuitem">Toutes les disciplines</a>
+              <a href="disciplines.html#osteopathie"      class="nav-dropdown-link" role="menuitem">Ostéopathie</a>
+              <a href="disciplines.html#energetique"      class="nav-dropdown-link" role="menuitem">Énergétique chinoise</a>
+              <a href="disciplines.html#mbsr"             class="nav-dropdown-link" role="menuitem">MBSR — Pleine conscience</a>
+              <a href="disciplines.html#sophrologie"      class="nav-dropdown-link" role="menuitem">Sophrologie</a>
+              <a href="disciplines.html#yoga"             class="nav-dropdown-link" role="menuitem">Yoga</a>
+              <a href="disciplines.html#somatotherapie"   class="nav-dropdown-link" role="menuitem">Somatothérapie</a>
+              <a href="disciplines.html#kinesiologie"     class="nav-dropdown-link" role="menuitem">Kinésiologie</a>
+            </div>
+          </li>
+          <li><a href="stages.html"  class="nav-link" data-nav="stages">Stages</a></li>
+          <li><a href="tarifs.html"  class="nav-link" data-nav="tarifs">Tarifs</a></li>
+          <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta"><a href="contact.html" class="btn-nav-cta">Prendre contact</a></div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="overlay-menu">
+        <span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- OVERLAY MOBILE -->
+  <div class="overlay-menu" id="overlay-menu" role="dialog" aria-modal="true" aria-label="Menu principal">
+    <nav class="overlay-nav" aria-label="Menu mobile">
+      <ul class="overlay-list" role="list">
+        <li class="overlay-item"><a href="index.html" class="overlay-link" data-nav="index">Accueil</a></li>
+        <li class="overlay-item">
+          <button class="overlay-link overlay-submenu-btn" aria-expanded="false" aria-controls="overlay-sub-disciplines">
+            Disciplines
+            <svg class="overlay-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="overlay-sub" id="overlay-sub-disciplines" hidden>
+            <li><a href="disciplines.html"                class="overlay-sub-link">Toutes les disciplines</a></li>
+            <li><a href="disciplines.html#osteopathie"    class="overlay-sub-link">Ostéopathie</a></li>
+            <li><a href="disciplines.html#energetique"    class="overlay-sub-link">Énergétique chinoise</a></li>
+            <li><a href="disciplines.html#mbsr"           class="overlay-sub-link">MBSR — Pleine conscience</a></li>
+            <li><a href="disciplines.html#sophrologie"    class="overlay-sub-link">Sophrologie</a></li>
+            <li><a href="disciplines.html#yoga"           class="overlay-sub-link">Yoga</a></li>
+            <li><a href="disciplines.html#somatotherapie" class="overlay-sub-link">Somatothérapie</a></li>
+            <li><a href="disciplines.html#kinesiologie"   class="overlay-sub-link">Kinésiologie</a></li>
+          </ul>
+        </li>
+        <li class="overlay-item"><a href="stages.html"  class="overlay-link" data-nav="stages">Stages</a></li>
+        <li class="overlay-item"><a href="tarifs.html"  class="overlay-link" data-nav="tarifs">Tarifs</a></li>
+        <li class="overlay-item"><a href="contact.html" class="overlay-link" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <footer class="overlay-footer">
+      <a href="mailto:cabinetecoquartier@gmail.com" class="overlay-email">cabinetecoquartier@gmail.com</a>
+      <span class="overlay-address">2 mail Françoise Dolto (1er étage) · Ramonville St Agne · Métro Ligne B</span>
+    </footer>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Disciplines">
+    <div class="container page-hero-inner">
+      <span class="page-hero-label">Cabinet de l'Écoquartier</span>
+      <h1 class="page-hero-title">Nos <strong>disciplines</strong><br><em>complémentaires</em></h1>
+    </div>
+  </section>
+
+  <!-- SOUS-NAV sticky -->
+  <nav class="disciplines-subnav" aria-label="Accès rapide aux disciplines">
+    <div class="subnav-inner">
+      <a href="#osteopathie"    class="subnav-link">Ostéopathie</a>
+      <a href="#energetique"    class="subnav-link">Énergétique chinoise</a>
+      <a href="#mbsr"           class="subnav-link">MBSR</a>
+      <a href="#sophrologie"    class="subnav-link">Sophrologie</a>
+      <a href="#yoga"           class="subnav-link">Yoga</a>
+      <a href="#somatotherapie" class="subnav-link">Somatothérapie</a>
+      <a href="#kinesiologie"   class="subnav-link">Kinésiologie</a>
+    </div>
+  </nav>
+
+  <!-- VUE D'ENSEMBLE /01…/07 -->
+  <section class="disciplines-num-section" aria-labelledby="num-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Vue d'ensemble</span>
+        <h2 class="section-title" id="num-heading">
+          Huit approches pour<br><strong>prendre soin de vous</strong>
+        </h2>
+      </header>
+      <div class="num-cards-grid">
+        <article class="num-card reveal">
+          <span class="num-card-counter">/01</span>
+          <h3 class="num-card-title">Ostéopathie</h3>
+          <p class="num-card-desc">Manipulations manuelles douces du système musculo-squelettique, myofascial, viscéral ou crânien pour corriger les troubles fonctionnels.</p>
+          <span class="num-card-practitioners">Benoît Cazeaux · Pascal Ngo Van Duc</span>
+        </article>
+        <article class="num-card reveal">
+          <span class="num-card-counter">/02</span>
+          <h3 class="num-card-title">Énergétique chinoise</h3>
+          <p class="num-card-desc">Médecine traditionnelle chinoise : acupuncture, tui na, qi gong, phytothérapie et diététique chinoise pour rééquilibrer les flux d'énergie.</p>
+          <span class="num-card-practitioners">Nathalie Beth</span>
+        </article>
+        <article class="num-card reveal">
+          <span class="num-card-counter">/03</span>
+          <h3 class="num-card-title">MBSR — Pleine conscience</h3>
+          <p class="num-card-desc">Programme de réduction du stress basé sur la pleine conscience (protocole Dr Jon Kabat-Zinn). Cycle de 8 semaines, reconnu scientifiquement.</p>
+          <span class="num-card-practitioners">Marie-Dominique Chamard</span>
+        </article>
+        <article class="num-card reveal">
+          <span class="num-card-counter">/04</span>
+          <h3 class="num-card-title">Sophrologie</h3>
+          <p class="num-card-desc">Relaxation dynamique, visualisation positive et exercices respiratoires pour gérer le stress, les phobies et accompagner les transitions de vie.</p>
+          <span class="num-card-practitioners">Praticien·ne disponible sur demande</span>
+        </article>
+        <article class="num-card reveal">
+          <span class="num-card-counter">/05</span>
+          <h3 class="num-card-title">Yoga</h3>
+          <p class="num-card-desc">Hatha yoga : postures, respiration et relaxation pour harmoniser les énergies corporelles. Cours en petits groupes, tous niveaux.</p>
+          <span class="num-card-practitioners">Virginie Callette</span>
+        </article>
+        <article class="num-card reveal">
+          <span class="num-card-counter">/06</span>
+          <h3 class="num-card-title">Somatothérapie</h3>
+          <p class="num-card-desc">Écoute psychocorporelle intégrant le verbal et le non-verbal. Massage Sensitif® et PNL pour accompagner la personne dans sa globalité.</p>
+          <span class="num-card-practitioners">Véronique Toussaint</span>
+        </article>
+        <article class="num-card reveal">
+          <span class="num-card-counter">/07</span>
+          <h3 class="num-card-title">Kinésiologie</h3>
+          <p class="num-card-desc">Test musculaire pour identifier et corriger les déséquilibres physiques, mentaux, émotionnels et énergétiques. Brain Gym, Touch for Health.</p>
+          <span class="num-card-practitioners">Sandrine Toussaint</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DÉTAILS PAR DISCIPLINE -->
+  <section class="discipline-sections" aria-label="Détail des disciplines">
+
+    <!-- /01 OSTÉOPATHIE -->
+    <article class="discipline-detail" id="osteopathie">
+      <div class="discipline-detail-inner container">
+        <aside class="discipline-aside reveal">
+          <span class="discipline-aside-num">/01</span>
+          <span class="discipline-aside-lbl">Discipline</span>
+        </aside>
+        <div class="reveal">
+          <h2 class="discipline-name">Ostéopathie</h2>
+          <p class="discipline-desc">
+            L'ostéopathie propose des manipulations manuelles douces du système musculo-squelettique, myofascial, viscéral ou crânien pour identifier et corriger les troubles fonctionnels. Elle considère le corps dans sa globalité et agit sur les restrictions de mobilité pour permettre un fonctionnement optimal.
+          </p>
+          <p class="discipline-desc">
+            Les séances s'adressent aux nourrissons, enfants, adultes et personnes âgées : douleurs du dos et du cou, troubles digestifs, migraines, suivi de grossesse, préparation et récupération sportive, pédiatrie.
+          </p>
+          <div class="discipline-meta">
+            <div class="meta-item">
+              <span class="meta-label">Praticiens</span>
+              <span class="meta-value">Benoît Cazeaux · Pascal Ngo Van Duc</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Tarif adulte</span>
+              <span class="meta-value meta-value--accent">60 € (Cazeaux) · 70 € (Ngo Van Duc)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Tarif nourrisson (&lt; 4 ans)</span>
+              <span class="meta-value meta-value--accent">50 € · 55 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- /02 ÉNERGÉTIQUE CHINOISE -->
+    <article class="discipline-detail" id="energetique">
+      <div class="discipline-detail-inner container">
+        <aside class="discipline-aside reveal">
+          <span class="discipline-aside-num">/02</span>
+          <span class="discipline-aside-lbl">Discipline</span>
+        </aside>
+        <div class="reveal">
+          <h2 class="discipline-name">Énergétique chinoise</h2>
+          <p class="discipline-desc">
+            La médecine traditionnelle chinoise (MTC) repose sur l'équilibre des flux d'énergie vitale (Qi) dans le corps. Nathalie Beth propose cinq techniques complémentaires : acupuncture (stimulation des points d'énergie), tui na (massage chinois), qi gong (mouvements énergétiques), phytothérapie et diététique chinoise personnalisée.
+          </p>
+          <div class="discipline-meta">
+            <div class="meta-item">
+              <span class="meta-label">Praticienne</span>
+              <span class="meta-value">Nathalie Beth — certifiée FNMTC et FLETC</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Horaires</span>
+              <span class="meta-value">Lun, Mer, Ven 12h30–19h00</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Tarif</span>
+              <span class="meta-value meta-value--accent">50 €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- /03 MBSR -->
+    <article class="discipline-detail" id="mbsr">
+      <div class="discipline-detail-inner container">
+        <aside class="discipline-aside reveal">
+          <span class="discipline-aside-num">/03</span>
+          <span class="discipline-aside-lbl">Discipline</span>
+        </aside>
+        <div class="reveal">
+          <h2 class="discipline-name">MBSR — Pleine conscience</h2>
+          <p class="discipline-desc">
+            Le programme MBSR (Mindfulness-Based Stress Reduction) a été développé par le Dr Jon Kabat-Zinn à l'Université du Massachusetts. Ce cycle de 8 semaines entraîne progressivement à la pleine conscience par la méditation assise, le yoga doux, le body-scan et les pratiques informelles quotidiennes.
+          </p>
+          <p class="discipline-desc">
+            Soutenu par 40 ans de recherches cliniques, il permet de développer une plus grande capacité à faire face au stress, à la douleur chronique et aux difficultés émotionnelles avec clarté et bienveillance.
+          </p>
+          <div class="discipline-meta">
+            <div class="meta-item">
+              <span class="meta-label">Praticienne</span>
+              <span class="meta-value">Marie-Dominique Chamard</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Format</span>
+              <span class="meta-value">Cycle 8 semaines en groupe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- /04 SOPHROLOGIE -->
+    <article class="discipline-detail" id="sophrologie">
+      <div class="discipline-detail-inner container">
+        <aside class="discipline-aside reveal">
+          <span class="discipline-aside-num">/04</span>
+          <span class="discipline-aside-lbl">Discipline</span>
+        </aside>
+        <div class="reveal">
+          <h2 class="discipline-name">Sophrologie</h2>
+          <p class="discipline-desc">
+            Créée par le neuropsychiatre Alfonso Caycedo, la sophrologie combine relaxation dynamique, visualisation positive et exercices de respiration. Elle développe les ressources intérieures pour mieux gérer le stress, l'anxiété, les phobies, et accompagner les transitions de vie (grossesse, examens, changements professionnels).
+          </p>
+          <div class="discipline-meta">
+            <div class="meta-item">
+              <span class="meta-label">Format</span>
+              <span class="meta-value">Séances individuelles et de groupe</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Contact</span>
+              <span class="meta-value"><a href="mailto:cabinetecoquartier@gmail.com" style="color:var(--green-dark)">cabinetecoquartier@gmail.com</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- /05 YOGA -->
+    <article class="discipline-detail" id="yoga">
+      <div class="discipline-detail-inner container">
+        <aside class="discipline-aside reveal">
+          <span class="discipline-aside-num">/05</span>
+          <span class="discipline-aside-lbl">Discipline</span>
+        </aside>
+        <div class="reveal">
+          <h2 class="discipline-name">Yoga</h2>
+          <p class="discipline-desc">
+            Virginie Callette, certifiée de l'École Indienne de Yoga de Madras (2002), propose des cours de Hatha yoga — « union du soleil et de la lune » — pour harmoniser les énergies corporelles. Au programme : postures (asanas), maîtrise de la respiration (pranayama) et relaxation profonde.
+          </p>
+          <p class="discipline-desc">
+            Les cours en petits groupes accueillent tous les niveaux, débutants comme pratiquants réguliers. Bénéfices : souplesse, soulagement des tensions, amélioration de la posture, concentration et gestion du stress.
+          </p>
+          <div class="discipline-meta">
+            <div class="meta-item">
+              <span class="meta-label">Praticienne</span>
+              <span class="meta-value">Virginie Callette</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Horaires</span>
+              <span class="meta-value">Lun 19h30 · Mer 12h15 &amp; 19h00 · Jeu 19h30</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Tarif séance</span>
+              <span class="meta-value meta-value--accent">25 € (essai : 20 €)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- /06 SOMATOTHÉRAPIE -->
+    <article class="discipline-detail" id="somatotherapie">
+      <div class="discipline-detail-inner container">
+        <aside class="discipline-aside reveal">
+          <span class="discipline-aside-num">/06</span>
+          <span class="discipline-aside-lbl">Discipline</span>
+        </aside>
+        <div class="reveal">
+          <h2 class="discipline-name">Somatothérapie</h2>
+          <p class="discipline-desc">
+            La somatothérapie proposée par Véronique Toussaint est une écoute psychocorporelle intégrant la parole et le non-verbal. Elle s'appuie sur le Massage Sensitif® (méthode Claude Camilli) et la PNL (Maître Praticienne INLPTA) pour accompagner chaque personne dans ses dimensions physique, psychologique et végétative.
+          </p>
+          <p class="discipline-desc">
+            Indiqué pour traverser des transitions de vie difficiles, libérer des blocages émotionnels et physiques, développer la conscience de soi et rétablir l'équilibre. Accessible aux enfants, adolescents, adultes et seniors.
+          </p>
+          <div class="discipline-meta">
+            <div class="meta-item">
+              <span class="meta-label">Praticienne</span>
+              <span class="meta-value">Véronique Toussaint</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Durée</span>
+              <span class="meta-value">1h00 sur rendez-vous</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Tarif</span>
+              <span class="meta-value meta-value--accent">60 € adulte · 50 € enfant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- /07 KINÉSIOLOGIE -->
+    <article class="discipline-detail" id="kinesiologie">
+      <div class="discipline-detail-inner container">
+        <aside class="discipline-aside reveal">
+          <span class="discipline-aside-num">/07</span>
+          <span class="discipline-aside-lbl">Discipline</span>
+        </aside>
+        <div class="reveal">
+          <h2 class="discipline-name">Kinésiologie</h2>
+          <p class="discipline-desc">
+            Sandrine Toussaint, diplômée de l'école EduTm (Labège), utilise le test musculaire pour identifier les déséquilibres physiques, mentaux, émotionnels et énergétiques. Les techniques de correction — Brain Gym, Touch for Health, Adaptogenèse, Concept 3 en 1 — s'appuient sur les principes de la médecine traditionnelle chinoise.
+          </p>
+          <p class="discipline-desc">
+            Séances d'environ une heure, pour enfants et adultes. Le Francile peut être pratiqué en groupe sur demande.
+          </p>
+          <div class="discipline-meta">
+            <div class="meta-item">
+              <span class="meta-label">Praticienne</span>
+              <span class="meta-value">Sandrine Toussaint</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Durée</span>
+              <span class="meta-value">1h environ · sur rendez-vous</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Tarif</span>
+              <span class="meta-value meta-value--accent">60 € adulte · 50 € enfant (&lt; 12 ans)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div><img src="images/logo.webp" alt="" class="footer-logo" aria-hidden="true" loading="lazy"></div>
+          <div>
+            <p class="footer-site-name">Cabinet de l'Écoquartier</p>
+            <p class="footer-tagline">Centre paramédical pluridisciplinaire<br>Ramonville St Agne</p>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="disciplines.html">Disciplines</a></li>
+            <li><a href="stages.html">Stages &amp; ateliers</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+          </ul>
+        </nav>
+        <address class="footer-contact">
+          <p>2 mail Françoise Dolto, 1er étage<br>31520 Ramonville St Agne</p>
+          <p>Métro Ligne B · Ramonville (terminus)</p>
+          <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+        </address>
+      </div>
+      <p class="footer-legal">© Cabinet de l'Écoquartier · Démo statique — contenu réel cabinetecoquartier.fr</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

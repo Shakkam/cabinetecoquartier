@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stages &amp; ateliers — Cabinet de l'Écoquartier</title>
+  <meta name="description" content="Stages et ateliers au Cabinet de l'Écoquartier : yoga, MBSR, sophrologie. Contactez-nous pour les prochaines dates.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="stages">
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="Cabinet de l'Écoquartier — accueil">
+        <img src="images/logo.webp" alt="Cabinet de l'Écoquartier" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="logo-fallback" style="display:none">Cabinet de l'Écoquartier</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link" data-nav="index">Accueil</a></li>
+          <li class="nav-item-dropdown">
+            <button class="nav-link nav-dropdown-btn" aria-haspopup="true" aria-expanded="false" data-nav="disciplines">
+              Disciplines
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown" role="menu" aria-label="Disciplines">
+              <div class="nav-dropdown-header">Nos disciplines</div>
+              <a href="disciplines.html"                  class="nav-dropdown-link nav-dropdown-link--first" role="menuitem">Toutes les disciplines</a>
+              <a href="disciplines.html#osteopathie"      class="nav-dropdown-link" role="menuitem">Ostéopathie</a>
+              <a href="disciplines.html#energetique"      class="nav-dropdown-link" role="menuitem">Énergétique chinoise</a>
+              <a href="disciplines.html#mbsr"             class="nav-dropdown-link" role="menuitem">MBSR — Pleine conscience</a>
+              <a href="disciplines.html#sophrologie"      class="nav-dropdown-link" role="menuitem">Sophrologie</a>
+              <a href="disciplines.html#yoga"             class="nav-dropdown-link" role="menuitem">Yoga</a>
+              <a href="disciplines.html#somatotherapie"   class="nav-dropdown-link" role="menuitem">Somatothérapie</a>
+              <a href="disciplines.html#kinesiologie"     class="nav-dropdown-link" role="menuitem">Kinésiologie</a>
+            </div>
+          </li>
+          <li><a href="stages.html"  class="nav-link" data-nav="stages">Stages</a></li>
+          <li><a href="tarifs.html"  class="nav-link" data-nav="tarifs">Tarifs</a></li>
+          <li><a href="contact.html" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta"><a href="contact.html" class="btn-nav-cta">Prendre contact</a></div>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="overlay-menu">
+        <span class="burger-bar"></span><span class="burger-bar"></span><span class="burger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- OVERLAY MOBILE -->
+  <div class="overlay-menu" id="overlay-menu" role="dialog" aria-modal="true" aria-label="Menu principal">
+    <nav class="overlay-nav" aria-label="Menu mobile">
+      <ul class="overlay-list" role="list">
+        <li class="overlay-item"><a href="index.html" class="overlay-link" data-nav="index">Accueil</a></li>
+        <li class="overlay-item">
+          <button class="overlay-link overlay-submenu-btn" aria-expanded="false" aria-controls="overlay-sub-disciplines">
+            Disciplines
+            <svg class="overlay-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="overlay-sub" id="overlay-sub-disciplines" hidden>
+            <li><a href="disciplines.html"                class="overlay-sub-link">Toutes les disciplines</a></li>
+            <li><a href="disciplines.html#osteopathie"    class="overlay-sub-link">Ostéopathie</a></li>
+            <li><a href="disciplines.html#energetique"    class="overlay-sub-link">Énergétique chinoise</a></li>
+            <li><a href="disciplines.html#mbsr"           class="overlay-sub-link">MBSR — Pleine conscience</a></li>
+            <li><a href="disciplines.html#sophrologie"    class="overlay-sub-link">Sophrologie</a></li>
+            <li><a href="disciplines.html#yoga"           class="overlay-sub-link">Yoga</a></li>
+            <li><a href="disciplines.html#somatotherapie" class="overlay-sub-link">Somatothérapie</a></li>
+            <li><a href="disciplines.html#kinesiologie"   class="overlay-sub-link">Kinésiologie</a></li>
+          </ul>
+        </li>
+        <li class="overlay-item"><a href="stages.html"  class="overlay-link" data-nav="stages">Stages</a></li>
+        <li class="overlay-item"><a href="tarifs.html"  class="overlay-link" data-nav="tarifs">Tarifs</a></li>
+        <li class="overlay-item"><a href="contact.html" class="overlay-link" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <footer class="overlay-footer">
+      <a href="mailto:cabinetecoquartier@gmail.com" class="overlay-email">cabinetecoquartier@gmail.com</a>
+      <span class="overlay-address">2 mail Françoise Dolto (1er étage) · Ramonville St Agne · Métro Ligne B</span>
+    </footer>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Stages et ateliers">
+    <div class="container page-hero-inner">
+      <span class="page-hero-label">Cabinet de l'Écoquartier</span>
+      <h1 class="page-hero-title">Stages &amp; <strong>ateliers</strong></h1>
+    </div>
+  </section>
+
+  <!-- STAGES -->
+  <section class="stages-section" aria-labelledby="stages-heading">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">Ateliers collectifs</span>
+        <h2 class="section-title" id="stages-heading">
+          Formats collectifs<br><strong>disponibles</strong>
+        </h2>
+      </header>
+
+      <ul class="stages-list" role="list">
+
+        <li class="stage-item reveal">
+          <div class="stage-date" aria-label="Yoga">
+            <span class="stage-day" style="font-size:1rem;padding-top:.25rem">Yoga</span>
+            <span class="stage-month">Cours</span>
+          </div>
+          <div class="stage-body">
+            <h3 class="stage-name">Cours de yoga hebdomadaires</h3>
+            <p class="stage-desc">
+              Cours de Hatha yoga en petits groupes avec Virginie Callette, certifiée de l'École Indienne de Yoga de Madras. Postures, respiration, relaxation — tous niveaux. Une séance découverte peut être proposée avant engagement.
+            </p>
+            <ul class="stage-meta" aria-label="Horaires">
+              <li><span>Lundi 19h30</span></li>
+              <li><span>Mercredi 12h15 &amp; 19h00</span></li>
+              <li><span>Jeudi 19h30</span></li>
+              <li><span class="stage-price">25 € / séance</span></li>
+            </ul>
+            <p class="stage-booking">
+              Inscription : <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="stage-item reveal">
+          <div class="stage-date" aria-label="Yoga Mix">
+            <span class="stage-day" style="font-size:1rem;padding-top:.25rem">Yoga</span>
+            <span class="stage-month">Atelier</span>
+          </div>
+          <div class="stage-body">
+            <h3 class="stage-name">Yoga Mix · Yoga Feet-Up · Ateliers thématiques</h3>
+            <p class="stage-desc">
+              Des ateliers thématiques de yoga sont proposés ponctuellement : Yoga Mix (fusion de styles), Yoga Feet-Up (inversion douce), Yoga du rire. Ces formats collectifs sont organisés sur demande et en fonction des disponibilités.
+            </p>
+            <ul class="stage-meta" aria-label="Informations">
+              <li><span>Virginie Callette</span></li>
+              <li><span>Dates sur demande</span></li>
+            </ul>
+            <p class="stage-booking">
+              Renseignements : <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="stage-item reveal">
+          <div class="stage-date" aria-label="MBSR">
+            <span class="stage-day" style="font-size:1rem;padding-top:.25rem">MBSR</span>
+            <span class="stage-month">Cycle</span>
+          </div>
+          <div class="stage-body">
+            <h3 class="stage-name">Cycle MBSR — Réduction du stress par la pleine conscience</h3>
+            <p class="stage-desc">
+              Cycle de 8 semaines basé sur le programme du Dr Jon Kabat-Zinn (Université du Massachusetts). Séances hebdomadaires de groupe incluant méditation assise, body-scan, yoga doux et pratiques informelles. Supports audio et pédagogiques fournis.
+            </p>
+            <ul class="stage-meta" aria-label="Informations">
+              <li><span>Marie-Dominique Chamard</span></li>
+              <li><span>Cycles réguliers</span></li>
+            </ul>
+            <p class="stage-booking">
+              Prochaines dates et inscription : <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="stage-item reveal">
+          <div class="stage-date" aria-label="Kinésiologie">
+            <span class="stage-day" style="font-size:1rem;padding-top:.25rem">Kiné</span>
+            <span class="stage-month">Groupe</span>
+          </div>
+          <div class="stage-body">
+            <h3 class="stage-name">Francile en groupe — Kinésiologie</h3>
+            <p class="stage-desc">
+              Sandrine Toussaint propose la pratique du Francile (technique de kinésiologie) en format collectif sur demande. Contactez le cabinet pour organiser une session avec votre groupe.
+            </p>
+            <ul class="stage-meta" aria-label="Informations">
+              <li><span>Sandrine Toussaint</span></li>
+              <li><span>Sur demande</span></li>
+            </ul>
+            <p class="stage-booking">
+              Contact : <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+            </p>
+          </div>
+        </li>
+
+      </ul>
+
+      <aside style="margin-top:3rem;padding:1.5rem 2rem;background:var(--sage-bg);border-left:3px solid var(--green);border-radius:var(--radius);" class="reveal">
+        <p style="font-size:.9375rem;color:var(--txt-mid);line-height:1.7;">
+          <strong style="color:var(--sage-dark)">Aucune date n'est actuellement publiée sur le site</strong> pour les stages à venir. Pour connaître le calendrier en cours et les disponibilités, contactez directement le cabinet : <a href="mailto:cabinetecoquartier@gmail.com" style="color:var(--green-dark);font-weight:600">cabinetecoquartier@gmail.com</a>
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div><img src="images/logo.webp" alt="" class="footer-logo" aria-hidden="true" loading="lazy"></div>
+          <div>
+            <p class="footer-site-name">Cabinet de l'Écoquartier</p>
+            <p class="footer-tagline">Centre paramédical pluridisciplinaire<br>Ramonville St Agne</p>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Navigation secondaire">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="disciplines.html">Disciplines</a></li>
+            <li><a href="stages.html">Stages &amp; ateliers</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact &amp; accès</a></li>
+          </ul>
+        </nav>
+        <address class="footer-contact">
+          <p>2 mail Françoise Dolto, 1er étage<br>31520 Ramonville St Agne</p>
+          <p>Métro Ligne B · Ramonville (terminus)</p>
+          <a href="mailto:cabinetecoquartier@gmail.com">cabinetecoquartier@gmail.com</a>
+        </address>
+      </div>
+      <p class="footer-legal">© Cabinet de l'Écoquartier · Démo statique — contenu réel cabinetecoquartier.fr</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
